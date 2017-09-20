@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 500px;
+  margin: 10px 0 50px 10px;
+}
+
+.container2 {
+  margin: 10px 0 50px 10px;
+}
+
+.container3 {
+  width: 300px;
+  margin: 10px 0 50px 10px;
+}
+
+.search_wrapper{
+  display: inline-block;
+  width: 70%;
+}
+
+.input_wrapper {
+  border: 1px solid grey;
+  min-height: 20px;
+  position: relative;
+  padding: 0 12px;
+}
+
+.super_search_input {
+  width: 92%;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  height: 18px;
+  padding: 10px 0;
+  padding-right: 5px;
+}
+
+.input_wrapper,
+.super_search_input {
+  border-radius: 4px 0 0  4px;
+}
+
+.reset_btn {
+  visibility: hidden;
+  height: 30px;
+  width: 30px;
+  border: none;
+  background: url(images/video.png) no-repeat 50% 50%;
+  position: absolute;
+  right: 8px;
+  color: lightgrey;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.dropdown_list {
+  display: none;
+  border: 1px solid grey;
+  border-radius: 4px;
+  /*overflow: hidden;*/
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.super_search_btn{
+  background-color: #d5551c;
+  color: white;
+  vertical-align:top;
+  min-height: 40px;
+  padding: 5px 10px;
+  border: 2px solid #d5551c;
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+}
+
+.super_search_btn[disabled] {
+  background-color: #e79a7e;
+  border: 2px solid #e79a7e;
+}
+
+.dropdown_list li {
+  list-style-type: none;
+  display: block;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+
+.dropdown_list li:hover {
+  background-color: whitesmoke;
+}
+
+.dropdown_list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.dropdown_list p {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.dropdown_list span {
+  color: #1b93e5;
+}
+
+.link_wrapper,
+.full_view_elem p,
+.overflow_hidden_elem p {
+  display: inline-block;
+}
+
+.overflow_hidden_elem {
+  position: relative;
+}
+
+.overflow_hidden_elem p {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
+
+.overflow_hidden_elem div {
+  overflow: hidden;
+  position: relative;
+}
+
+.overflow_hidden_elem div:after{
+    content:"";
+    display: inline-block;
+    height:20px;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0), #fff 75%);
+}
+
+.input_wrapper,
+.dropdown_list {
+  font-family: sans-serif;
+}
